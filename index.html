@@ -114,6 +114,7 @@ footer {
 
 <section>
     <h2>Contact Us</h2>
+
     <p><strong>📍 Address:</strong><br>
     1263/29, Vidyanagar Main Road,<br>
     Davanagere, Karnataka, India – 577005</p>
@@ -121,10 +122,30 @@ footer {
     <p><strong>📞 Phone / WhatsApp:</strong> +91 6361183873</p>
     <p><strong>📧 Email:</strong> vyomaexports@gmail.com</p>
 
-    <a class="button" href="https://wa.me/916361183873" target="_blank">
-        Contact Us on WhatsApp
-    </a>
+    <h3>Quick Enquiry (WhatsApp)</h3>
+
+    <form onsubmit="sendWhatsApp(); return false;">
+        <input type="text" id="name" placeholder="Your Name" required style="width:100%;padding:10px;margin:6px 0;">
+        <input type="text" id="product" placeholder="Product Interested" required style="width:100%;padding:10px;margin:6px 0;">
+        <textarea id="message" placeholder="Your Message" required style="width:100%;padding:10px;margin:6px 0;"></textarea>
+        <button type="submit" class="button">Send Enquiry on WhatsApp</button>
+    </form>
 </section>
+
+<script>
+function sendWhatsApp() {
+    var name = document.getElementById("name").value;
+    var product = document.getElementById("product").value;
+    var message = document.getElementById("message").value;
+
+    var url = "https://wa.me/916361183873?text="
+        + "Name: " + name + "%0A"
+        + "Product: " + product + "%0A"
+        + "Message: " + message;
+
+    window.open(url, "_blank");
+}
+</script>
 
 <footer>
     © 2026 Vyoma Exports. All rights reserved.
