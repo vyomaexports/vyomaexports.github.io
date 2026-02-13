@@ -1,33 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Vyoma Exports</title>
-<meta name="description" content="Vyoma Exports - Trusted Export Company">
-<meta name="keywords" content="Vyoma Exports, Indian exporter, global exports">
+<meta charset="UTF-8">
+<title>Vyoma Exports | Indian Export Company</title>
+<meta name="description" content="Vyoma Exports is a trusted Indian export company supplying agricultural products, vegetables, fruits and nuts globally.">
+<meta name="keywords" content="Vyoma Exports, Indian Exporter, Agricultural Exports, Coconut Exporter, Onion Exporter">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f8;
 }
 header {
-  background-color: #003366;
-  color: white;
-  padding: 20px;
-  text-align: center;
+    background: #003366;
+    color: white;
+    padding: 30px 15px;
+    text-align: center;
 }
 section {
-  background: white;
-  margin: 15px;
-  padding: 20px;
-  border-radius: 8px;
+    background: white;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 8px;
 }
+h2 { color: #003366; }
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+.product {
+    text-align: center;
+}
+.product img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 18px;
+    background: #25D366;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
 footer {
-  background: #222;
-  color: white;
-  text-align: center;
-  padding: 10px;
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 14px 16px;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
 }
 </style>
 </head>
@@ -35,38 +76,61 @@ footer {
 <body>
 
 <header>
-<h1>Vyoma Exports</h1>
-<p>Connecting India to Global Markets</p>
+    <h1>Vyoma Exports</h1>
+    <p>Connecting India to Global Markets</p>
 </header>
 
 <section>
-<h2>About Us</h2>
-<p>
-Vyoma Exports is an Indian export company delivering quality products
-to international markets with trust and transparency.
-</p>
+    <h2>About Us</h2>
+    <p>
+        Vyoma Exports is a trusted Indian export company delivering high-quality agricultural products,
+        vegetables, fruits, and nuts to international markets with transparency and reliability.
+    </p>
 </section>
 
 <section>
-<h2>Our Products</h2>
-<ul>
-<li>Agricultural Products</li>
-<li>Spices</li>
-<li>Textiles</li>
-<li>Custom Export Solutions</li>
-</ul>
+    <h2>Our Products</h2>
+    <h3>Agriculture • Vegetables • Fruits • Nuts</h3>
+
+    <div class="products">
+        <div class="product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Coconut_with_husk.jpg">
+            <p>Semi Husked Coconut</p>
+        </div>
+        <div class="product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Green_chillies.jpg">
+            <p>Green Chilli</p>
+        </div>
+        <div class="product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Onions.jpg">
+            <p>Onion</p>
+        </div>
+        <div class="product">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Ginger_root.jpg">
+            <p>Ginger</p>
+        </div>
+    </div>
 </section>
 
 <section>
-<h2>Contact Us</h2>
-<p>Email: vyomaexports@gmail.com</p>
-<p>Phone: +91 6361183873</p>
-<p>Location: India</p>
+    <h2>Contact Us</h2>
+    <p><strong>📍 Address:</strong><br>
+    1263/29, Vidyanagar Main Road,<br>
+    Davanagere, Karnataka, India – 577005</p>
+
+    <p><strong>📞 Phone / WhatsApp:</strong> +91 6361183873</p>
+    <p><strong>📧 Email:</strong> vyomaexports@gmail.com</p>
+
+    <a class="button" href="https://wa.me/916361183873" target="_blank">
+        Contact Us on WhatsApp
+    </a>
 </section>
 
 <footer>
-<p>© 2026 Vyoma Exports. All rights reserved.</p>
+    © 2026 Vyoma Exports. All rights reserved.
 </footer>
+
+<a class="whatsapp" href="https://wa.me/916361183873" target="_blank">💬</a>
 
 </body>
 </html>
